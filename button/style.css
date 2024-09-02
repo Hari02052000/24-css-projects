@@ -1,0 +1,52 @@
+:root{
+    --font-family:'Karla','sans-serif';
+    --body-bg:#1E1F25;
+    --btn-bg:#000;
+    --btn-col-hover:#fff;
+    --btn-col:#cbcbcb;
+    --grad-col1:#eeaf61;
+    --grad-col2:#fb9062;
+    --grad-col3:#ee5d6c;
+    --grad-col4:#ce4993;
+    --grad-col5:#6a0d83;
+}
+
+body{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: var(--font-family);
+}
+
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color:var(--body-bg);
+}
+.button-border{
+    background:linear-gradient(115deg,var(--grad-col1),var(--grad-col2),var(--grad-col3),var(--grad-col4),var(--grad-col5));
+    padding: 2px;
+}
+.button{
+    font-family: inherit;
+    background-color: var(--btn-bg);
+    color: var(--btn-col);
+    padding: 1em 1.5em;
+    letter-spacing: .1em;
+}
+
+.button-border:hover{
+
+    background:linear-gradient(270deg,var(--grad-col1),var(--grad-col2),var(--grad-col3),var(--grad-col4),var(--grad-col5));
+
+
+}
+
+.button-border:hover .button{
+color: var(--btn-col-hover);
+padding: 1.1em 1.6em;
+cursor: pointer;
+
+}
